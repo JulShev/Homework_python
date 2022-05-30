@@ -1,4 +1,4 @@
-# 6.5
+# задание 5
 import openpyxl
 
 exel_file = openpyxl.load_workbook("files/users.xlsx")
@@ -7,13 +7,8 @@ sheet = exel_file["users"]
 
 print(sheet["A1"])
 
-for i, _ in enumerate(sheet, 1):
-    print(sheet[f'A[i]'].value)
 
-for line in sheet:
-
-
-# 6.4
+# задание 4
 import csv
 
 FILENAME = "users.csv"
@@ -38,7 +33,7 @@ with open(FILENAME, "r") as file:
         print(row)
 
 
-# 6.3
+# задание 3
 import json
 people = [
     {"id": "123456",
@@ -71,7 +66,7 @@ with open("data_file.json") as write_file:
     data = json.load(write_file)
 print(data)
 
-# 6.2
+# задание 2
 first = input('Введите первую строку\r\n')
 second = input('Введите вторую строку\n')
 third = input('Введите третью строку\n')
@@ -87,7 +82,7 @@ with open('new_file.txt', "a") as file:
 
 
 
- # 6.1
+ # задание 1
 b = b'r\xc3\xa9sum\xc3\xa9'
 s = b.decode("UTF-8")
 print(s)
