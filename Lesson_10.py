@@ -19,8 +19,6 @@ def operation(a, b, op):
         print(e)
     except ZeroDivisionError:
         print("на ноль делить нельзя!")
-
-# с помощью регулярного выражения получаем список емаилов, соответствующих заданному условию
 while True:
     user_input = input('Введите выражение').replace(' ', '').replace(',', '.')
     if res:
